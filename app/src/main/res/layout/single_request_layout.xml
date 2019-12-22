@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/single_request_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@color/colorNotStable">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/single_request_user_image"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/avatar2" />
+
+    <TextView
+        android:id="@+id/single_request_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@+id/single_request_user_image"
+        android:width="250dp"
+        android:text="Username"
+        android:textColor="@android:color/background_dark"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/single_req_user_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/single_request_user_name"
+        android:layout_centerVertical="true"
+        android:maxWidth="150dp"
+        android:text="User Status" />
+
+    <ImageButton
+        android:id="@+id/single_req_accept"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:background="@color/colorWhite"
+        app:srcCompat="@drawable/accept_image_btn" />
+
+    <ImageButton
+        android:id="@+id/single_req_reject"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="16dp"
+        android:layout_toStartOf="@+id/single_req_accept"
+        android:background="@color/colorWhite"
+        app:srcCompat="@drawable/delete_request" />
+
+</RelativeLayout>

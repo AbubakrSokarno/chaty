@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/my_message_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingRight="2dp"
+    android:paddingTop="2dp">
+
+    <ImageView
+        android:id="@+id/my_image_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/my_msg_timestamp"
+        android:layout_alignEnd="@+id/my_msg_timestamp"
+        android:layout_alignParentTop="true"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/loading" />
+
+    <TextView
+        android:id="@+id/my_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="7dp"
+        android:background="@drawable/my_message_single_shap"
+        android:maxWidth="250dp"
+        android:padding="8dp"
+        android:text="TextView"
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/my_msg_timestamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/my_message"
+        android:layout_marginEnd="11dp"
+        android:layout_marginRight="7dp"
+        android:text="TextView"
+        android:textSize="10sp" />
+
+
+</RelativeLayout>

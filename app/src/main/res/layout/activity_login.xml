@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.abubakrsokarno.chaty.LoginActivity">
+    <include layout="@layout/app_bar_layout" android:id="@+id/main_toolbar" />
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="85dp"
+        android:text="@string/login_form"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="97dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+
+    <EditText
+        android:id="@+id/login_email"
+        android:layout_width="280dp"
+        android:layout_height="42dp"
+        android:layout_alignStart="@+id/login_password"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="77dp"
+        android:ems="10"
+        android:hint="@string/email_address"
+        android:inputType="textEmailAddress"
+        tools:layout_editor_absoluteX="52dp" />
+
+    <EditText
+        android:id="@+id/login_password"
+        android:layout_width="280dp"
+        android:layout_height="42dp"
+        android:layout_below="@+id/login_email"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="52dp"
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        app:layout_constraintTop_toBottomOf="@+id/login_email"
+        tools:layout_editor_absoluteX="52dp"
+        />
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="52dp"
+        android:text="@string/login"
+        app:layout_constraintTop_toBottomOf="@+id/login_password"
+        tools:layout_editor_absoluteX="148dp"
+        />
+
+
+
+</RelativeLayout>
